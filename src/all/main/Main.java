@@ -32,7 +32,7 @@ public class Main {
                     dictionary.addWord(english, russia);
                     break;
                 case 2:
-                    System.out.println("Ввкдите английское предложение:");
+                    System.out.println("Ввкдите английское предложение :");
                     String englishSentence = new Scanner(System.in).nextLine();
                     translator = new Translator(dictionary);
                     translator.TranslateEnglishToRussia(englishSentence);
