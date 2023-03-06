@@ -3,11 +3,7 @@ package all.main;
 import all.library.Dictionary;
 import all.library.Translator;
 
-import java.awt.*;
-import java.util.Map;
-import java.util.Map.Entry;
 import java.util.Scanner;
-import java.util.Set;
 import all.menu.Menu;
 
 public class Main {
@@ -32,7 +28,7 @@ public class Main {
                     dictionary.addWord(english, russia);
                     break;
                 case 2:
-                    System.out.println("Ввкдите английское предложение :");
+                    System.out.println("Введите английское предложение :");
                     String englishSentence = new Scanner(System.in).nextLine();
                     translator = new Translator(dictionary);
                     translator.TranslateEnglishToRussia(englishSentence);
@@ -61,6 +57,11 @@ public class Main {
                         System.out
                                 .println("Ваш словарь пуст! Пожалуйста, добавьте слово или загрузите словарь из файла.");
                     else System.out.println(dictionary.getDictionary());
+                    break;
+                case 7:
+                    System.out.println("Введите слово которе нужно удалить :");
+                    String english1 = new Scanner(System.in).nextLine();
+                    dictionary.deliteWord(english1);
                     break;
                 default:
                     if (solution != 0)

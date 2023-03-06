@@ -10,6 +10,7 @@ public class Menu {
         System.out.println("4 : Сохранить словарь");
         System.out.println("5 : Загрузить словарь");
         System.out.println("6 : Показать словарь");
+        System.out.println("7 : Удалить слово");
         System.out.println("0 : Выйти");
     }
 }

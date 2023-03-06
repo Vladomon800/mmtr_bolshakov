@@ -18,6 +18,10 @@ public class Dictionary implements Serializable {
         dictionary = new HashMap<String, String>();
     }
 
+    public void deliteWord(String english) {
+        dictionary.remove(english);
+    }
+
 
 
     public void addWord(String english, String russia) {
